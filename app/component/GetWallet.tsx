@@ -5,7 +5,7 @@ import {derivePath} from "ed25519-hd-key";
 import {Keypair, PublicKey} from "@solana/web3.js";
 import nacl from "tweetnacl";
 
-export const GenerateWallet = ({mnemonic}) => {
+export const GenerateWallet = ({mnemonic}:any) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [publicKey, setPubicKey] = useState<PublicKey[]>([]);
 
