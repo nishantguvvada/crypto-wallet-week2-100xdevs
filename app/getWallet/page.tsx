@@ -25,7 +25,7 @@ export default function GetWallet() {
             <li className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-500">Generate wallet (public keys)</time>
-                <p className="mt-2 mb-2 text-base font-normal text-gray-500 dark:text-gray-400">All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.</p>
+                <p className="mt-2 mb-2 text-base font-normal text-gray-500 dark:text-gray-400">Click to generate public keys</p>
                 <GenerateWallet  mnemonic={mnemonic}/>
             </li>
             <li className="ms-4">
