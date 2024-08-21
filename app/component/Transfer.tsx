@@ -44,15 +44,15 @@ export const TransferSol = () => {
 
 
     return <div>
-        <label className="block text-sm mb-2 dark:text-white">Sender's public key</label>
+        <label className="block text-sm mb-2 dark:text-white">Sender&apos;s public key</label>
         <input onChange={(e)=>{
             setFromPublicKey(e.target.value)
             }} type="text" placeholder="Enter sender's public key" className="mb-2 max-w-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-        <label className="block text-sm mb-2 dark:text-white">Sender's private key</label>
+        <label className="block text-sm mb-2 dark:text-white">Sender&apos;s private key</label>
         <input onChange={(e)=>{
             setFromPrivateKey(e.target.value)
             }} type="text" placeholder="Enter sender's private key" className="mb-2 max-w-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
-        <label className="block text-sm mb-2 dark:text-white">Receiver's public key</label>
+        <label className="block text-sm mb-2 dark:text-white">Receiver&apos;s public key</label>
         <input onChange={(e)=>{
             setToPublicKey(e.target.value)
             }} type="text" placeholder="Enter receiver's public key" className="mb-2 max-w-md bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"/>
