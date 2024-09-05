@@ -23,7 +23,7 @@ function ConnectWallet() {
         ()=>[
             new UnsafeBurnerWalletAdapter(),
             new PhantomWalletAdapter()
-        ],[network]
+        ],[]
     );
 
     return (
