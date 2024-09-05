@@ -13,7 +13,7 @@ import {
 } from "@solana/web3.js";
 import bs58 from "bs58";
 
-export const TransferSol = () => {
+export default function TransferSol() {
     const [toPublicKey, setToPublicKey] = useState("");
     const [fromPublicKey, setFromPublicKey] = useState("");
     const [fromPrivateKey, setFromPrivateKey] = useState("");
