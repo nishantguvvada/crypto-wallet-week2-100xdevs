@@ -54,7 +54,7 @@ export default function GetWallet() {
                 <li className="mb-10 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                     <time className="mb-1 text-lg font-semibold text-gray-900 dark:text-gray-500">Create Token</time>
-                    <p className="mt-2 mb-2 text-base font-normal text-gray-500 dark:text-gray-400">Enter the token owner&apos;s keypair to create a token</p>
+                    <p className="mt-2 mb-2 text-base font-normal text-gray-500 dark:text-gray-400">Enter the token owner&apos;s keypair to create or fetch a token</p>
                     <Token/>
                 </li>
             </ol>
