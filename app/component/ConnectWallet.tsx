@@ -3,12 +3,18 @@ import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
 import { PhantomWalletAdapter, UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import {
     WalletModalProvider,
-    WalletDisconnectButton,
-    WalletMultiButton
 } from '@solana/wallet-adapter-react-ui';
+import dynamic from 'next/dynamic';
+const WalletMultiButtonDynamic = dynamic(
+    async () => (await import ('@solana/wallet-adapter-react-ui')).WalletMultiButton,
+    { ssr: false}
+);
+const WalletDisconnectButtonDynamic = dynamic(
+    async () => (await import ('@solana/wallet-adapter-react-ui')).WalletDisconnectButton,
+    { ssr: false}
+);
 import { 
-    clusterApiUrl,
-    Connection
+    clusterApiUrl
  } from '@solana/web3.js';
 import '@solana/wallet-adapter-react-ui/styles.css';
 import { useMemo } from 'react';
@@ -31,8 +37,8 @@ function ConnectWallet() {
             <WalletProvider wallets={wallets} autoConnect>
                 <WalletModalProvider>
                     <CustomConnect/>
-                    <div className="py-2.5 me-2 mb-2 text-sm font-medium text-gray-900"><WalletMultiButton /></div>
-                    <div className="me-2 mb-2 text-sm font-medium text-gray-900"><WalletDisconnectButton /></div>
+                    <div className="py-2.5 me-2 mb-2 text-sm font-medium text-gray-900"><WalletMultiButtonDynamic /></div>
+                    <div className="me-2 mb-2 text-sm font-medium text-gray-900"><WalletDisconnectButtonDynamic /></div>
                 </WalletModalProvider>
             </WalletProvider>
         </ConnectionProvider>

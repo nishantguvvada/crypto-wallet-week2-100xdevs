@@ -8,8 +8,7 @@ import {
     Transaction, 
     SystemProgram, 
     LAMPORTS_PER_SOL, 
-    sendAndConfirmTransaction,
-    Cluster
+    sendAndConfirmTransaction
 } from "@solana/web3.js";
 import bs58 from "bs58";
 
